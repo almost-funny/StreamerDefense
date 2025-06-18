@@ -8,23 +8,12 @@ ATTRIBUTION
 
 This project uses the following asset packs from Kenney.nl:
 
-1. Game Icons  
-   https://kenney.nl/assets/game-icons
-
-2. Kenney Fonts  
-   https://kenney.nl/assets/kenney-fonts
-
-3. Top-down Tanks Redux  
-   https://kenney.nl/assets/top-down-tanks-redux
-
-4. Tower Defense Top-down  
-   https://kenney.nl/assets/tower-defense-top-down
-
-5. UI Pack
-   https://kenney.nl/assets/ui-pack
-
-6. UI Pack - Sci-Fi
-   https://kenney.nl/assets/ui-pack-sci-fi
+1. Game Icons: https://kenney.nl/assets/game-icons
+2. Kenney Fonts: https://kenney.nl/assets/kenney-fonts
+3. Top-down Tanks Redux: https://kenney.nl/assets/top-down-tanks-redux
+4. Tower Defense Top-down: https://kenney.nl/assets/tower-defense-top-down
+5. UI Pack: https://kenney.nl/assets/ui-pack
+6. UI Pack - Sci-Fi: https://kenney.nl/assets/ui-pack-sci-fi
 
 All assets by Kenney (https://kenney.nl) are licensed under the [CC0 1.0 Universal (Public Domain)](https://creativecommons.org/publicdomain/zero/1.0/) license.
 
