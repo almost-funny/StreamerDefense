@@ -20,7 +20,7 @@ This project uses the following asset packs from Kenney.nl:
 4. Tower Defense Top-down  
    https://kenney.nl/assets/tower-defense-top-down
 
-5. UI Pack  
+5. UI Pack
    https://kenney.nl/assets/ui-pack
 
 6. UI Pack - Sci-Fi
