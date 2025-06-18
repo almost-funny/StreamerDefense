@@ -33,3 +33,5 @@ Assets such as `BackGround`, `HPbar`, `Obstructed`, and `range_overlay` were cre
 ---
 
 Thank you to all asset creators!
+
+Thank you to my testers: Speed, JDFRG
