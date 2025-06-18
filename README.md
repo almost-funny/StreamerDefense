@@ -3,6 +3,7 @@ This is my first Godot game. The idea is to build a Tower Defense game which can
 
 At the moment, the plan is to have the chat influence the gameplay both positively and negatively: e.g. by giving the streamer gold for towers, gifting tower upgrades, spawning obstruction elements, spawning extra enemies, etc.
 
+---
 
 ATTRIBUTION
 
