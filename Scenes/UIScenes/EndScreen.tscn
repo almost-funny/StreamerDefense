@@ -1,0 +1,111 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://Assets/UI/Art/BackGround.png" type="Texture" id=1]
+[ext_resource path="res://Resources/Fonts/fkn_140_o1.tres" type="DynamicFont" id=2]
+[ext_resource path="res://Resources/Fonts/fkn_70_o1.tres" type="DynamicFont" id=3]
+[ext_resource path="res://Resources/Fonts/fkn_40_o1.tres" type="DynamicFont" id=4]
+[ext_resource path="res://Assets/UI/Buttons/button_rectangle_flat.png" type="Texture" id=5]
+[ext_resource path="res://Assets/UI/Buttons/button_rectangle_gradient.png" type="Texture" id=6]
+[ext_resource path="res://Scenes/UIScenes/EndScreen.gd" type="Script" id=7]
+
+[node name="EndScreen" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 7 )
+
+[node name="B" type="TextureRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 1 )
+expand = true
+
+[node name="M" type="MarginContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_constants/margin_right = 50
+custom_constants/margin_top = 50
+custom_constants/margin_left = 50
+custom_constants/margin_bottom = 50
+
+[node name="VBoxContainer" type="VBoxContainer" parent="M"]
+margin_left = 50.0
+margin_top = 50.0
+margin_right = 958.0
+margin_bottom = 396.0
+rect_min_size = Vector2( 600, 200 )
+size_flags_horizontal = 0
+size_flags_vertical = 0
+
+[node name="Control" type="Control" parent="M/VBoxContainer"]
+margin_right = 908.0
+margin_bottom = 100.0
+rect_min_size = Vector2( 0, 100 )
+
+[node name="MainLabel" type="Label" parent="M/VBoxContainer"]
+margin_top = 104.0
+margin_right = 908.0
+margin_bottom = 262.0
+custom_fonts/font = ExtResource( 2 )
+text = "You Win!"
+
+[node name="ResultsLabel" type="Label" parent="M/VBoxContainer"]
+margin_top = 266.0
+margin_right = 908.0
+margin_bottom = 346.0
+custom_fonts/font = ExtResource( 3 )
+text = "You survived X waves!"
+valign = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="M/VBoxContainer/ResultsLabel"]
+margin_top = 184.0
+margin_right = 770.0
+margin_bottom = 259.0
+size_flags_horizontal = 0
+size_flags_vertical = 0
+custom_constants/separation = 70
+alignment = 2
+
+[node name="Control" type="Control" parent="M/VBoxContainer/ResultsLabel/HBoxContainer"]
+margin_bottom = 100.0
+rect_min_size = Vector2( 0, 100 )
+
+[node name="PlayAgain" type="TextureButton" parent="M/VBoxContainer/ResultsLabel/HBoxContainer"]
+margin_left = 70.0
+margin_right = 420.0
+margin_bottom = 100.0
+rect_min_size = Vector2( 350, 75 )
+size_flags_horizontal = 4
+texture_normal = ExtResource( 6 )
+texture_pressed = ExtResource( 5 )
+expand = true
+
+[node name="Label" type="Label" parent="M/VBoxContainer/ResultsLabel/HBoxContainer/PlayAgain"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_colors/font_color_shadow = Color( 0, 0, 0, 0.705882 )
+custom_fonts/font = ExtResource( 4 )
+text = "Play Again"
+align = 1
+valign = 1
+
+[node name="MainMenu" type="TextureButton" parent="M/VBoxContainer/ResultsLabel/HBoxContainer"]
+margin_left = 490.0
+margin_right = 840.0
+margin_bottom = 100.0
+rect_min_size = Vector2( 350, 75 )
+size_flags_horizontal = 4
+texture_normal = ExtResource( 6 )
+texture_pressed = ExtResource( 5 )
+expand = true
+
+[node name="Label" type="Label" parent="M/VBoxContainer/ResultsLabel/HBoxContainer/MainMenu"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_colors/font_color_shadow = Color( 0, 0, 0, 0.705882 )
+custom_fonts/font = ExtResource( 4 )
+text = "Main Menu"
+align = 1
+valign = 1
+
+[connection signal="pressed" from="M/VBoxContainer/ResultsLabel/HBoxContainer/PlayAgain" to="." method="_on_PlayAgain_pressed"]
+[connection signal="pressed" from="M/VBoxContainer/ResultsLabel/HBoxContainer/MainMenu" to="." method="_on_MainMenu_pressed"]
